@@ -2,7 +2,7 @@ use bevy::prelude::*;
 use bevy::math::DVec2;
 use super::components::*;
 
-pub const GRAVITY: DVec2 = DVec2::new(0.0, -9.800);
+pub const GRAVITY: DVec2 = DVec2::new(0.0, -980.0);
 
 pub fn apply_gravity(time: Res<Time>, mut query: Query<(&mut Velocity, &Mass), With<RigidBody>>) {
     let dt = time.delta_secs_f64();

@@ -22,7 +22,7 @@ fn setup(mut commands: Commands) {
     commands.spawn((
         RigidBody,
         Velocity(DVec2::ZERO),
-        Mass(-1.0), // 0.0 mass = static/infinite for our simple logic (need to handle in system)
+        Mass(0.0), // 0.0 mass = static/infinite for our simple logic (need to handle in system)
         Restitution(0.7),
         Collider::Circle(500000.0),
         Sprite {
